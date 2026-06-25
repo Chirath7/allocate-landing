@@ -12,15 +12,7 @@ export default function Navbar({ onDemoClick, onLogoClick, onNavClick }) {
         borderBottom: "1px solid var(--line)",
       }}
     >
-      <div
-        className="wrap"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          height: 68,
-        }}
-      >
+      <div className="wrap navbar-container">
         <div
           className="mono"
           onClick={onLogoClick}
@@ -29,12 +21,14 @@ export default function Navbar({ onDemoClick, onLogoClick, onNavClick }) {
           <span style={{ width: 8, height: 8, background: "var(--amber)", borderRadius: 1, display: "inline-block" }} />
           ALLOCATE
         </div>
-        <div style={{ display: "flex", gap: 36, fontSize: 14, color: "var(--text-dim)" }}>
+        <div className="nav-links">
           <a href="#how" onClick={(e) => { e.preventDefault(); onNavClick?.("how"); }}>How it works</a>
           <a href="#cases" onClick={(e) => { e.preventDefault(); onNavClick?.("cases"); }}>Use cases</a>
           <a href="#origin" onClick={(e) => { e.preventDefault(); onNavClick?.("origin"); }}>Origin</a>
         </div>
-        <Button onClick={onDemoClick}>Request a Demo</Button>
+        <div className="nav-button">
+          <Button onClick={onDemoClick}>Request a Demo</Button>
+        </div>
       </div>
     </nav>
   );

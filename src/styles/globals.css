@@ -205,3 +205,45 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* NAVBAR */
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  font-size: 14px;
+  color: var(--text-dim);
+}
+
+.nav-button {
+  display: block;
+}
+
+@media (max-width: 768px) {
+
+  .navbar-container {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 12px 0;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+    font-size: 13px;
+    order: 3;
+  }
+
+  .nav-button {
+    display: none;
+  }
+}
