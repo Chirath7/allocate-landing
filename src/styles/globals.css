@@ -47,6 +47,7 @@ a {
     padding-left: 32px;
     padding-right: 32px;
   }
+
 }
 
 .section {
@@ -172,16 +173,21 @@ a {
 
   .wrap {
     padding: 0 20px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .section {
     padding: 60px 0;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
+    padding-top: 24px;
   }
 
   .hero-title {
