@@ -73,16 +73,7 @@ export default function DemoRequest({ onBack, onNavClick }) {
     <div>
       <Navbar onDemoClick={onBack} onLogoClick={onBack} onNavClick={onNavClick} />
 
-      <div
-        className="wrap"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1.1fr",
-          gap: 64,
-          padding: "80px 32px",
-          alignItems: "start",
-        }}
-      >
+      <div className="wrap demo-layout">
         {/* LEFT — intro copy */}
         <div>
           <span
@@ -143,7 +134,7 @@ export default function DemoRequest({ onBack, onNavClick }) {
             </div>
           ) : (
             <form onSubmit={handleSubmit}>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 20 }}>
+              <div className="name-fields">
                 <div>
                   <label style={labelStyle}>First name{required}</label>
                   <input required type="text" style={inputStyle} value={formData.firstName} onChange={handleChange("firstName")} />

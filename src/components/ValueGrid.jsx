@@ -20,13 +20,7 @@ export default function ValueGrid() {
       <div style={{ marginBottom: 48 }}>
       </div>
 
-      <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            gap: 20,
-          }}
-      >
+      <div className="value-grid">
         {VALUES.map(([num, label]) => (
           <div key={num} className="hover-card" style={{ background: "var(--panel)", padding: "28px 24px", border: "1px solid var(--line)", borderRadius: 8 }}>
             <div className="mono" style={{ fontSize: 28, fontWeight: 700, color: "var(--amber)", marginBottom: 8 }}>

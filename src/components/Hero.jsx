@@ -3,16 +3,7 @@ import GridStage from "./GridStage";
 
 export default function Hero({ onDemoClick }) {
   return (
-    <header
-      className="wrap"
-      style={{
-        padding: "96px 0 80px",
-        display: "grid",
-        gridTemplateColumns: "1.05fr 0.95fr",
-        gap: 48,
-        alignItems: "center",
-      }}
-    >
+    <header className="wrap hero-grid">
       <div>
         <div
           className="mono"
@@ -30,16 +21,7 @@ export default function Hero({ onDemoClick }) {
           <span style={{ width: 18, height: 1, background: "var(--cyan)" }} />
           Resource Optimization Engine
         </div>
-        <h1
-          className="mono"
-          style={{
-            fontWeight: 700,
-            fontSize: 46,
-            lineHeight: 1.12,
-            letterSpacing: -0.5,
-            marginBottom: 22,
-          }}
-        >
+        <h1 className="mono hero-title">
           Stop guessing.
           <br />
           Start <span style={{ color: "var(--amber)" }}>allocating</span> on data.
@@ -69,6 +51,7 @@ export default function Hero({ onDemoClick }) {
         </div>
       </div>
       <GridStage />
+      
     </header>
   );
 }

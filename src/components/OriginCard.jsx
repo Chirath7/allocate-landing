@@ -12,21 +12,11 @@ export default function OriginCard() {
         scarce resources get scheduled.
       </p>
 
-      <div
-        style={{
-          background: "var(--panel)",
-          border: "1px solid var(--line)",
-          borderRadius: 10,
-          padding: 40,
-          display: "grid",
-          gridTemplateColumns: "160px 1fr",
-          gap: 36,
-          alignItems: "start",
-        }}
-      >
+      <div className="origin-card">
         {/* Replace src with the real photo at /src/assets/images/professor.jpg */}
         <img
-          src="/public/Amal.jpg"
+          className="origin-image"
+          src="/Amal.jpg"
           alt="Prof. Jayantha K. Wickramasuriya"
           style={{
             width: 160,

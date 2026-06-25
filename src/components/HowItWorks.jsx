@@ -18,13 +18,7 @@ export default function HowItWorks() {
         most efficient arrangement that fits every rule.
       </p>
 
-      <div
-        style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr",
-        gap: 20,
-      }}
-      >
+      <div className="how-grid">
         {STEPS.map(([step, title, body]) => (
           <div key={step} className="hover-card" style={{ background: "var(--panel)", padding: "32px 28px", border: "1px solid var(--line)", borderRadius: 8 }}>
             <div className="mono" style={{ fontSize: 12, color: "var(--cyan)", letterSpacing: 1, marginBottom: 16 }}>

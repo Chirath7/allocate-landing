@@ -17,7 +17,7 @@ export default function Products() {
         Same optimization core underneath — purpose-built for the problem you actually have.
       </p>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
+      <div className="products-grid">
         {PRODUCTS.map(([name, tag, desc]) => (
           <div key={name} className="hover-card" style={{ background: "var(--panel)", border: "1px solid var(--line)", borderRadius: 8, padding: 28 }}>
             <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 6 }}>{name}</h3>

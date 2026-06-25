@@ -17,7 +17,7 @@ export default function UseCases() {
         These aren't hypotheticals — they're the exact categories operations teams optimize every day.
       </p>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
+      <div className="usecases-grid">
         {CASES.map(([tag, title, body]) => (
           <div key={title} className="hover-card" style={{ background: "var(--panel)", border: "1px solid var(--line)", borderRadius: 8, padding: 28 }}>
             <div
