@@ -44,7 +44,8 @@ a {
 
 @media (max-width: 768px) {
   .wrap {
-    padding: 0 24px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
