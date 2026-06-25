@@ -54,21 +54,21 @@ export default function OriginCard() {
           >
             <div>
               <b style={{ color: "var(--text)", display: "block", fontSize: 14, fontFamily: "'Inter', sans-serif", fontWeight: 700 }}>
-                20+ years
+                30+ years
               </b>
               Operations Research
             </div>
             <div>
               <b style={{ color: "var(--text)", display: "block", fontSize: 14, fontFamily: "'Inter', sans-serif", fontWeight: 700 }}>
-                40+ papers
+                PHD in
               </b>
-              Published research
+              Optimization
             </div>
             <div>
               <b style={{ color: "var(--text)", display: "block", fontSize: 14, fontFamily: "'Inter', sans-serif", fontWeight: 700 }}>
-                Dept. of Industrial Eng.
+                30+ years
               </b>
-              University of Moratuwa
+              Work experience
             </div>
           </div>
         </div>
