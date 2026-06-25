@@ -19,7 +19,7 @@ export default function UseCases() {
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
         {CASES.map(([tag, title, body]) => (
-          <div key={title} style={{ background: "var(--panel)", border: "1px solid var(--line)", borderRadius: 8, padding: 28 }}>
+          <div key={title} className="hover-card" style={{ background: "var(--panel)", border: "1px solid var(--line)", borderRadius: 8, padding: 28 }}>
             <div
               className="mono"
               style={{

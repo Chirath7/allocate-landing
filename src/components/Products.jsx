@@ -19,7 +19,7 @@ export default function Products() {
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
         {PRODUCTS.map(([name, tag, desc]) => (
-          <div key={name} style={{ background: "var(--panel)", border: "1px solid var(--line)", borderRadius: 8, padding: 28 }}>
+          <div key={name} className="hover-card" style={{ background: "var(--panel)", border: "1px solid var(--line)", borderRadius: 8, padding: 28 }}>
             <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 6 }}>{name}</h3>
             <div className="mono" style={{ fontSize: 12, color: "var(--cyan)", letterSpacing: 0.4, marginBottom: 16 }}>
               {tag}

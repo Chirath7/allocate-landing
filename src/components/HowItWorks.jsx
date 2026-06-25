@@ -20,17 +20,13 @@ export default function HowItWorks() {
 
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
-          gap: 1,
-          background: "var(--line)",
-          border: "1px solid var(--line)",
-          borderRadius: 8,
-          overflow: "hidden",
-        }}
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr 1fr",
+        gap: 20,
+      }}
       >
         {STEPS.map(([step, title, body]) => (
-          <div key={step} style={{ background: "var(--panel)", padding: "32px 28px" }}>
+          <div key={step} className="hover-card" style={{ background: "var(--panel)", padding: "32px 28px", border: "1px solid var(--line)", borderRadius: 8 }}>
             <div className="mono" style={{ fontSize: 12, color: "var(--cyan)", letterSpacing: 1, marginBottom: 16 }}>
               {step}
             </div>
