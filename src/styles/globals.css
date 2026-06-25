@@ -212,6 +212,7 @@ a {
 
   .demo-layout {
     grid-template-columns: 1fr;
+    padding-top:24px;
   }
 
   .name-fields {
@@ -246,6 +247,7 @@ a {
     flex-wrap: wrap;
     gap: 16px;
     padding: 12px 0;
+    padding-left:20px
   }
 
   .nav-links {
