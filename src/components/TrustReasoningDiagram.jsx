@@ -208,19 +208,60 @@ export default function TrustReasoningDiagram() {
           text-transform: uppercase;
         }
 
+        /* Tablet range — keep the side-by-side layout but breathe more room */
+        @media (max-width: 900px) {
+          .trd-root { aspect-ratio: 980 / 620; }
+          .trd-input, .trd-output { width: 18%; min-width: 96px; }
+          .trd-pane .trd-rule { font-size: 11.5px; }
+          .trd-pane .trd-meta { font-size: 8.5px; }
+        }
+
+        /* Phone range — stack everything vertically */
         @media (max-width: 640px) {
-          .trd-root { aspect-ratio: 980 / 760; border-radius: 18px; }
-          .trd-input, .trd-output { position: static; transform: none; width: auto; margin: 10px auto; }
-          .trd-glassbox { left: 4%; width: 92%; top: 8%; height: 60%; }
-          .trd-pane { width: 80%; left: 10% !important; }
-          .trd-pane--pattern { top: 36%; }
-          .trd-pane--tradeoff { top: 64%; }
+          .trd-root {
+            aspect-ratio: auto;
+            height: auto;
+            border-radius: 18px;
+            padding: 20px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+          }
+          .trd-input, .trd-output {
+            position: static;
+            transform: none;
+            width: 100%;
+            min-width: 0;
+            margin: 0;
+          }
+          .trd-glassbox {
+            position: static;
+            width: 100%;
+            height: auto;
+            left: auto; top: auto;
+            padding: 36px 14px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+          }
+          .trd-glassbox::before {
+            top: 12px; left: 14px;
+          }
+          .trd-pane {
+            position: static;
+            width: 100%;
+            left: auto !important;
+            top: auto !important;
+            opacity: 1;
+            animation: none;
+          }
           .trd-trailsvg, .trd-pulse { display: none; }
         }
 
-        @media (prefers-reduced-motion: reduce) {
-          .trd-pane, .trd-pulse, .trd-trail { animation: none !important; opacity: 1; }
-          .trd-pulse { display: none; }
+        @media (max-width: 380px) {
+          .trd-input .trd-label,
+          .trd-output .trd-label { font-size: 12px; }
+          .trd-pane .trd-rule { font-size: 12px; }
         }
       `}</style>
 
