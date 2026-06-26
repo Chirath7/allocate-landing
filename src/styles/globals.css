@@ -1,12 +1,12 @@
 :root {
-  --bg: #0E1116;
-  --panel: #161B22;
-  --panel-2: #1B212A;
-  --line: #262D38;
-  --text: #F2F0EA;
-  --text-dim: #8B95A1;
-  --amber: #FF7A45;
-  --cyan: #3DD6C4;
+  --bg: #f9ece5;
+  --panel: #fdd3bd;
+  --panel-2: #EFE9E3;
+  --line: #D9CFC7;
+  --text: #231F1C;
+  --text-dim: #7C7468;
+  --amber: #C9602F;
+  --cyan: #2F7C74;
 }
 
 * {
@@ -137,7 +137,7 @@ a {
 }
 
 .origin-card {
-  background: var(--panel);
+  background: #EFE9E3;
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 40px;
@@ -262,3 +262,83 @@ a {
     display: none;
   }
 }
+
+/* Navbar link hover underline */
+.nav-link {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 4px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--amber);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s cubic-bezier(.22,1,.36,1);
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* Request a Demo button hover */
+.demo-btn {
+  transition: transform 0.25s cubic-bezier(.22,1,.36,1),
+              box-shadow 0.25s ease,
+              background 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.demo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(201, 96, 47, 0.25);
+}
+
+.demo-btn.solid:hover {
+  background: #b8531f !important;
+}
+
+.demo-btn:not(.solid):hover {
+  background: var(--amber) !important;
+  color: var(--panel) !important;
+}
+
+/* "See how it works" link hover */
+.how-link {
+  position: relative;
+  display: inline-block;
+}
+
+.how-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  background: var(--text);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(.22,1,.36,1);
+}
+
+.how-link:hover {
+  color: var(--text) !important;
+}
+
+.how-link:hover::after {
+  transform: scaleX(1);
+}
+
+

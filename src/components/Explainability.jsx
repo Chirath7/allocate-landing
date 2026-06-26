@@ -5,7 +5,7 @@ export default function Explainability() {
   return (
     <section className="section wrap">
       <SectionTag>Trust</SectionTag>
-      <h2 className="mono" style={{ fontSize: 30, fontWeight: 700, letterSpacing: -0.3, marginBottom: 14, maxWidth: 640 }}>
+      <h2 className="mono" style={{ fontSize: 25, fontWeight: 700, letterSpacing: -0.3, marginBottom: 14, maxWidth: 640 }}>
         Not a black box.
       </h2>
       <p style={{ color: "var(--text-dim)", fontSize: 16, maxWidth: 640, marginBottom: 40 }}>

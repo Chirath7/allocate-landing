@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 const TOTAL = 80;
-const AMBER = "#FF7A45";
-const CYAN = "#3DD6C4";
+const AMBER = "#f69366";
+const CYAN = "#459990";
 
 export default function GridStage() {
   const [cells, setCells] = useState(Array(TOTAL).fill(null));

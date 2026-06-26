@@ -12,6 +12,7 @@ const inputStyle = {
   fontSize: 14,
   fontFamily: "'Inter', sans-serif",
   outline: "none",
+  colorScheme: "light"
 };
 
 const labelStyle = {
@@ -77,7 +78,7 @@ export default function DemoRequest({ onBack, onNavClick }) {
         {/* LEFT — intro copy */}
         <div>
           <span
-            className="mono"
+            className="mono back-link"
             onClick={onBack}
             style={{
               fontSize: 13,
@@ -203,11 +204,11 @@ export default function DemoRequest({ onBack, onNavClick }) {
               <button
                 type="submit"
                 disabled={loading}
-                className="mono"
+                className="mono demo-btn solid"
                 style={{
                     background: "var(--amber)",
                     color: "var(--bg)",
-                    border: "none",
+                    border: "1px solid var(--amber)",
                     borderRadius: 4,
                     padding: "12px 28px",
                     fontSize: 13,
@@ -217,8 +218,8 @@ export default function DemoRequest({ onBack, onNavClick }) {
                     opacity: loading ? 0.6 : 1,
                 }}
                 >
-                {loading ? "SENDING..." : "SUBMIT"}
-              </button>
+              {loading ? "SENDING..." : "SUBMIT"}
+            </button>
             </form>
           )}
         </div>

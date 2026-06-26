@@ -10,17 +10,17 @@ export default function TrustReasoningDiagram() {
     <div className="trd-root">
       <style>{`
         .trd-root {
-          --bg: #0a0d12;
-          --bg-glow-amber: rgba(255, 122, 69, 0.14);
-          --bg-glow-teal: rgba(61, 214, 196, 0.10);
-          --glass: rgba(255,255,255,0.05);
-          --glass-border: rgba(255,255,255,0.16);
-          --ink: #eef2f6;
-          --ink-dim: rgba(238,242,246,0.56);
-          --amber: #FF7A45;
-          --amber-deep: #c9551f;
-          --teal: #3DD6C4;
-          --line: rgba(255,255,255,0.22);
+            --bg: #EFE9E3;
+            --bg-glow-amber: rgba(201, 96, 47, 0.12);
+            --bg-glow-teal: rgba(47, 124, 116, 0.10);
+            --glass: rgba(35,31,28,0.04);
+            --glass-border: rgba(35,31,28,0.14);
+            --ink: #231F1C;
+            --ink-dim: rgba(35,31,28,0.56);
+            --amber: #C9602F;
+            --amber-deep: #a14e26;
+            --teal: #2F7C74;
+            --line: rgba(35,31,28,0.2);
           position: relative;
           width: 100%;
           max-width: 980px;
@@ -54,13 +54,13 @@ export default function TrustReasoningDiagram() {
           min-width: 108px;
           padding: 14px 12px;
           border-radius: 12px;
-          background: linear-gradient(150deg, #2a323c, #161a20);
+          background: linear-gradient(150deg, #2A2420, #15110E);
           border: 1px solid rgba(255,255,255,0.08);
           text-align: center;
         }
-        .trd-input .trd-eyebrow { color: var(--ink-dim); }
-        .trd-input .trd-label { font-weight: 800; font-size: 13px; letter-spacing: 0.02em; margin-top: 4px; }
-        .trd-input .trd-sub { font: 700 10px/1.4 "JetBrains Mono", monospace; color: rgba(255,255,255,0.38); margin-top: 6px; letter-spacing: 0.04em; }
+        .trd-input .trd-eyebrow { color: rgba(255,255,255,0.5); }
+        .trd-input .trd-label { font-weight: 800; font-size: 13px; letter-spacing: 0.02em; margin-top: 4px; color: #F9F8F6; }
+        .trd-input .trd-sub { font: 700 10px/1.4 "JetBrains Mono", monospace; color: rgba(255,255,255,0.5); margin-top: 6px; letter-spacing: 0.04em; }
 
         .trd-glassbox {
           position: absolute;

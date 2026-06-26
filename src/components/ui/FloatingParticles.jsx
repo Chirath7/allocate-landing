@@ -9,7 +9,7 @@ export default function FloatingParticles() {
     let particles = [];
     let animationId;
 
-    const COLORS = ["#FF7A45", "#3DD6C4"];
+    const COLORS = ["#7A6F66", "#2A2420"];
 
     function resize() {
       canvas.width = window.innerWidth;
@@ -25,7 +25,7 @@ export default function FloatingParticles() {
         speedX: (Math.random() - 0.5) * 0.3,
         speedY: (Math.random() - 0.5) * 0.3,
         color: COLORS[Math.floor(Math.random() * COLORS.length)],
-        opacity: Math.random() * 0.45 + 0.25,
+        opacity: Math.random() * 0.3 + 0.12,
       }));
     }
 
@@ -42,7 +42,7 @@ export default function FloatingParticles() {
 
         ctx.globalAlpha = p.opacity;
         ctx.shadowColor = p.color;
-        ctx.shadowBlur = 8;
+        ctx.shadowBlur = 4;
         ctx.fillStyle = p.color;
         ctx.fillRect(p.x, p.y, p.size, p.size);
       });

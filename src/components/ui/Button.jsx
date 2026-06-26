@@ -1,7 +1,8 @@
-export default function Button({ children, solid = false, onClick, style = {} }) {
+export default function Button({ children, solid, ...props }) {
   return (
     <button
-      onClick={onClick}
+      {...props}
+      className={`demo-btn${solid ? " solid" : ""}`}
       style={{
         fontFamily: "'JetBrains Mono', monospace",
         fontSize: 13,
@@ -14,8 +15,6 @@ export default function Button({ children, solid = false, onClick, style = {} })
         background: solid ? "var(--amber)" : "transparent",
         cursor: "pointer",
         whiteSpace: "nowrap",
-        transition: "background 0.2s, color 0.2s",
-        ...style,
       }}
     >
       {children}

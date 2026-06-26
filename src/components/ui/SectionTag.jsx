@@ -3,11 +3,11 @@ export default function SectionTag({ children }) {
     <div
       style={{
         fontFamily: "'JetBrains Mono', monospace",
-        fontSize: 12,
+        fontSize: 50,
         color: "var(--cyan)",
-        letterSpacing: 1.5,
+        letterSpacing: 1,
         textTransform: "uppercase",
-        marginBottom: 14,
+        marginBottom: 0,
       }}
     >
       {children}

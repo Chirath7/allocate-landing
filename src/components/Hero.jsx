@@ -33,15 +33,15 @@ export default function Hero({ onDemoClick }) {
           One optimization engine for your workforce, fleet, or capacity — it reads your real
           usage patterns and hands back the most efficient plan, automatically.
         </p>
-        <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+        <div style={{ display: "flex", gap: 14, flexWrap: "wrap"}}>
           <Button solid onClick={onDemoClick}>Request a Demo</Button>
           <span
-            className="mono"
+            className="mono how-link"
             style={{
               fontSize: 13,
               color: "var(--text-dim)",
               padding: "10px 6px",
-              borderBottom: "1px solid var(--line)",
+              borderBottom: "5px solid var(--line)",
               cursor: "pointer",
             }}
             onClick={() => document.getElementById("how")?.scrollIntoView()}

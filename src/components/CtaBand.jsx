@@ -5,7 +5,7 @@ export default function CtaBand({ onDemoClick }) {
     <section className="wrap" style={{ padding: "0 32px 88px" }}>
       <div
         style={{
-          background: "linear-gradient(135deg, #1B212A 0%, #14181F 100%)",
+          background: "var(--panel)",
           border: "1px solid var(--line)",
           borderRadius: 12,
           padding: "56px 48px",
@@ -24,7 +24,9 @@ export default function CtaBand({ onDemoClick }) {
             Request a free demo — bring your data, we'll show you the plan it could become.
           </p>
         </div>
-        <Button solid onClick={onDemoClick}>Request a Demo</Button>
+        <div className="nav-button">
+                  <Button onClick={onDemoClick}>Request a Demo</Button>
+        </div>
       </div>
     </section>
   );

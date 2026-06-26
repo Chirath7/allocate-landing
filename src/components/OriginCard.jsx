@@ -4,7 +4,7 @@ export default function OriginCard() {
   return (
     <section id="origin" className="section wrap">
       <SectionTag>The Origin</SectionTag>
-      <h2 className="mono" style={{ fontSize: 30, fontWeight: 700, letterSpacing: -0.3, marginBottom: 14, maxWidth: 640 }}>
+      <h2 className="mono" style={{ fontSize: 25, fontWeight: 700, letterSpacing: -0.3, marginBottom: 14, maxWidth: 640 }}>
         An idea rooted in real operations research.
       </h2>
       <p style={{ color: "var(--text-dim)", fontSize: 16, maxWidth: 560, marginBottom: 48 }}>

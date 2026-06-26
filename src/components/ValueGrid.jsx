@@ -11,7 +11,7 @@ export default function ValueGrid() {
   return (
     <section className="section wrap">
       <SectionTag>Why It Works</SectionTag>
-      <h2 className="mono" style={{ fontSize: 30, fontWeight: 700, letterSpacing: -0.3, marginBottom: 14, maxWidth: 640 }}>
+      <h2 className="mono" style={{ fontSize: 25, fontWeight: 700, letterSpacing: -0.3, marginBottom: 14, maxWidth: 640 }}>
         Built on operations research, not guesswork.
       </h2>
       <p style={{ color: "var(--text-dim)", fontSize: 16, maxWidth: 560, marginBottom: 48 }}>

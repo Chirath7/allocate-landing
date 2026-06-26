@@ -6,7 +6,7 @@ export default function IntegratesWith() {
   return (
     <section className="section wrap">
       <SectionTag>Fits Your Stack</SectionTag>
-      <h2 className="mono" style={{ fontSize: 30, fontWeight: 700, letterSpacing: -0.3, marginBottom: 14, maxWidth: 640 }}>
+      <h2 className="mono" style={{ fontSize: 25, fontWeight: 700, letterSpacing: -0.3, marginBottom: 14, maxWidth: 640 }}>
         Built to fit into how you already work.
       </h2>
       <p style={{ color: "var(--text-dim)", fontSize: 16, maxWidth: 560, marginBottom: 32 }}>
